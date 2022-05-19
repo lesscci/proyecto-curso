@@ -1,0 +1,116 @@
+html,
+body {
+  margin: 0;
+  background-color: rgb(46, 46, 46);
+  color: white;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.logo{
+  display: inline-block;
+  width: 212px;
+  top: 100px;
+  object-fit: cover;
+}
+/* Navbar */
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color: rgb(31, 31, 31);
+    border-bottom: 1px solid blueviolet;
+    width: 100%;
+    height: 110px;
+}
+.Navbar__left-content-btn{
+  display: inherit;
+  align-items: center;
+}
+.Navbar__btn-left{
+  color: yellowgreen;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 18px;
+  padding: 1em;
+}
+
+.Navbar__btn-login, .Navbar__btn-registro{
+  text-decoration: none;
+  padding: 1em;
+  border-radius: 10px;
+  margin-right: 1em;
+}
+.Navbar__btn-registro{
+  color: rgb(31, 31, 31);
+  font-weight: 900;
+  background-color: yellowgreen;
+}
+.Navbar__btn-login{
+  color: yellowgreen;
+  border: 1px solid yellowgreen;
+  font-weight: 900;
+  transition: background-color .2s ease;
+}
+.Navbar__btn-login:hover{
+  color: white;
+  background-color: yellowgreen;
+}
+
+
+/* home */
+.Home > section{
+  width: 100%;
+  height: 100vh;
+}
+.home__first-section, .home__second-section, .home__third-section{
+  display: flex;
+}
+.home__first-section{
+  background-color: rgb(255, 196, 0);
+}
+.home__titulo{
+  flex: 1;
+  font-style: italic;
+  padding-top: 6em;
+  padding-left: 8em;
+}
+.text-grande{
+  font-size: 120px;
+  color: blueviolet;
+}
+.texto-normal{
+  font-size: 40px;
+  color: blueviolet;
+}
+.image-geo{
+  margin: 6em;
+  flex: 1;
+  width: 600px;
+  height: 600px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 8px black;
+}
+.home__second-section{
+  background-color: rgb(0, 255, 229);
+}
+.home__third-section{
+  background-color: greenyellow;
+}
+.home__titulo{
+  margin: 0; 
+ }
+@media (max-width: 1082px){
+  .Navbar__btn-left{
+    font-size: 14px;
+  }
+  .Navbar__btn-registro,.Navbar__btn-login{
+    font-size: 14px;
+  }
+}
+
+
+@media (max-width: 876px){
+  .Navbar__btn-left, .Navbar__right-content-btn{
+    display: none;
+  }
+}
