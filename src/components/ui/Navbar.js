@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../../assets/logocadscasdc.png";
+import logo from "../../assets/logo-blanco-recto.png";
 export const Navbar = () => {
   return (
       <nav className="Navbar">
