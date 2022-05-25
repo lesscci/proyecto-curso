@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="style.css" />
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -10,14 +11,76 @@
       content="Web site created using create-react-app"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=s, initial-scale=1.0" />
+
+    <meta name="google-signin-scope" content="profile email" />
+    <meta name="google-signin-client_id" content="SEU_ID_DO_CLIENTE" />
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Koulen&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="modal.css" />
     <title>React App</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <section class="modal">
+      <div class="modal_container">
+        <div class="overlay">
+          <form>
+            <div class="logo-modal">
+              <img class="img-logo" src="/letras_blancas.png" alt="logo" />
+            </div>
+            <div class="form_section">
+              <input
+                class="form_input"
+                id="txt-input"
+                type="text"
+                placeholder="@NombreUsario"
+                required
+              />
+            </div>
+            <div class="form_section">
+              <input
+                class="form_input"
+                type="password"
+                placeholder="Contraseña"
+                id="pwd"
+                name="Password"
+                required
+              />
+            </div>
+            <div class="form_section button1">
+              <button class="sign_up">Registrate</button>
+            </div>
+            <div class="form_section button1">
+              <button class="entry">Entrar</button>
+            </div>
+            <button class="forgot">¿Has olvidado la cuenta?</button>
+            <!-- sign in google -->
+            <!--  <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark" data-width="370" data-height="50"
+                          data-longtitle="true" data-lang="es-ES">
+                      </div> -->
+          </form>
+          <a href="#" class="modal_close">Cerrar</a>
+        </div>
+      </div>
+    </section>
+    <script src="main.js"></script>
   </body>
 </html>
